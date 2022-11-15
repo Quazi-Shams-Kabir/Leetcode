@@ -10,9 +10,10 @@ public class checkpangram {
         if (sentence.length()<26){
             return false;
         }
-        for(int i = 0; i <= 26; i ++) {
-            if(sentence.indexOf(( char) i + 97) < 0)
+        for (int i = 0; i < 26; i++) {
+            if (sentence.indexOf((char)i+97)<0){
                 return false;
+            }
         }
 //        or
 //        int [] count = new int[26];
