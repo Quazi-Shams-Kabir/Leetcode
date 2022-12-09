@@ -15,9 +15,8 @@ public class FindPosiInanInfiniteArray {
         int end = 1;
 //  set up the range where the BS will take place
         while (target>arr[end]){
-            int temp=end+1;
-            end = end+(end-start+1) * 2;  //doubling the size of array
-            start = temp;
+            start = end+1;
+            end =(start * 2)+1;  //doubling the size of array,+1 is for indexing coz array starts from 0th index
         }
         return binarySearch(arr,target,start,end);
     }
